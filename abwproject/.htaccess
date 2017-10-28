@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteRule  ^$ public/    [L]
+	RewriteRule  (.*) public/$1 [L]
+</IfModule>
+
+# php_flag log_errors On
+# php_flag display_error 1
+# php_value error_log "/app/log/php_error.log"
